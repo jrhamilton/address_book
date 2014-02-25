@@ -26,12 +26,36 @@
               <input id="new-last-name" type="text">
             </div><br>
 
-            <div class="form-group">
-              <label for="new-address">ADDRESS:</label><br>
-              <input id="new-address" type="text">
-            </div><br>
+            <div id="new-phones">
+              <div class="a-phone">
+                <div class="form-group">
+                  <label for="new-phone">Phone:</label><br>
+                  <input class="form-control new-phone" type="text">
+                </div><br>
+              </div>              
+            </div>
 
-            <button type="submit" class="btn">activate!</button>
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class="form-group">
+                  <label for="street">Street</label>
+                  <input type="text" class="form-control new-street">
+                </div>
+                <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" class="form-control new-city">
+                </div>
+                <div class="form-group">
+                  <label for="state">State</label>
+                  <input type="text" class="form-control new-state">
+                </div>
+              </div>
+            </div>
+
+
+            <button type="submit" class="btn">Add!</button>
+            <span id="add-phone" class="adder phone-adder">Add another phone number!</span>
+            <span id="add-address" class="adder address-adder">Add another address!</span>
           </form>
         </div>
 
@@ -42,10 +66,10 @@
             <h2></h2>
             <p>First name: <span class="first-name"></span></p>
             <p>Last name: <span class="last-name"></span></p>
-            <p>Address: <span class="address"></span></p>
+            <ul id="phone-numbers"></ul>
+            <ul id="addresses"></ul>
           </div>
         </div>
-
       </div>
     </div>
   </body>
